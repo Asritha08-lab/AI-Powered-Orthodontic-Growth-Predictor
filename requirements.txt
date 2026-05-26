@@ -1,7 +1,13 @@
 flask
-pillow
-numpy
 tensorflow
+keras
+numpy
+pillow
+gunicorn
+h5py
+scikit-learn
+matplotlib
+pandas
 torch
 torchvision
 torchaudio
