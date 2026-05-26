@@ -1,14 +1,18 @@
+from flask import Flask, render_template, request
 import os
 import tkinter as tk
 from tkinter import filedialog, messagebox
 from PIL import Image, ImageTk
 import numpy as np
+model = tf.keras.models.load_model("model/model.h5")
 from keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array, load_img
 
 # ---------------- CONFIG ---------------- #
 
-MODEL_PATH = "models/tsynet_ortho_predictor.h5"
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "model", "model.h5")
+
+model = load_model(MODEL_PATH)
 
 IMAGE_SIZE = (128, 128)
 
