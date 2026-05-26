@@ -26,7 +26,7 @@ ALLOWED_EXTENSIONS = {'bmp', 'jpg', 'jpeg', 'png'}
 
 MODEL_PATH = "models/tsynet_ortho_predictor.h5"
 
-IMAGE_SIZE = (128, 128)
+IMAGE_SIZE = (64, 64)
 
 # Your actual folder names
 class_names = ["normal", "overbite", "underbite"]

@@ -48,7 +48,7 @@ def create_tsynet_model(input_shape, num_classes):
 
         # First CNN Block
         Conv2D(
-            32,
+            64,
             (3, 3),
             activation='relu',
             padding='same'
@@ -81,7 +81,7 @@ def create_tsynet_model(input_shape, num_classes):
 
         # Dense Layer
         Dense(
-            128,
+            64,
             activation='relu'
         ),
 
